@@ -1,0 +1,9 @@
+extends layout
+block content
+  if error_message
+    p= error_message
+  if dimensions
+    textarea
+      != '<svg width="' + dimensions.width + '" height="' + dimensions.height + '">'
+      !=  '<image xlink:href="svg.svg" width="' + dimensions.width + '" height="' + dimensions.height + '"/>'
+      != '</svg>'

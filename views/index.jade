@@ -1,0 +1,7 @@
+extends layout
+block content
+  form(method='POST', action='convert', enctype='multipart/form-data')
+    p
+      input(type='file',name='svgFile')
+    p
+      input(type='submit')
